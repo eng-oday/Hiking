@@ -8,6 +8,21 @@
 import SwiftUI
 
 struct CardView: View {
+    
+    @State private var randomNumber:Int = 1
+    @State private var imageNumber:Int = 1
+    @State private var isAnimating:Bool = false
+    @State private var angel:Double = 0
+    
+    private func randomImage(){
+        
+        repeat {
+            randomNumber = Int.random(in: 1...5)
+        }while randomNumber == imageNumber
+        
+        imageNumber =  randomNumber
+    }
+    
     var body: some View {
         
         ZStack {
@@ -49,18 +64,29 @@ struct CardView: View {
                     CustomCircleView()
                     
                     // :  CHARACTER
-                    Image("image-1")
+                    Image("image-\(randomNumber)")
                         .resizable()
                         .scaledToFit()
+                        .rotationEffect(isAnimating ? Angle(degrees: angel): Angle(degrees: angel))
+                        .animation(.easeOut(duration: 0.9), value: isAnimating)
                 }
 
             // MARK:  FOOTER
                 Button {
-                    print("the button random number pressed")
+                    randomImage()
+                    isAnimating  = !isAnimating
+                    angel += 90
                 } label: {
-                    Text("Random")
+                    Text("Random Explore")
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(
+                            LinearGradient(colors: [.customGreenLight,.customGreenMedium], startPoint: .top, endPoint: .bottom)
+                        )
+                        .shadow(color: .black.opacity(0.25), radius: 0.25, x: 1, y: 2)
+  
                 }
-                
+                .buttonStyle(CustomGradient())
             }
         }//:ZSTACK
         .frame(width: 320, height: 570)
