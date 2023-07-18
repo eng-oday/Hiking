@@ -11,8 +11,6 @@ struct CardView: View {
     
     @State private var randomNumber:Int = 1
     @State private var imageNumber:Int = 1
-    @State private var isAnimating:Bool = false
-    @State private var angel:Double = 0
     
     private func randomImage(){
         
@@ -67,15 +65,12 @@ struct CardView: View {
                     Image("image-\(randomNumber)")
                         .resizable()
                         .scaledToFit()
-                        .rotationEffect(isAnimating ? Angle(degrees: angel): Angle(degrees: angel))
-                        .animation(.easeOut(duration: 0.9), value: isAnimating)
+                        .animation(.easeOut(duration: 0.9), value: randomNumber)
                 }
 
             // MARK:  FOOTER
                 Button {
                     randomImage()
-                    isAnimating  = !isAnimating
-                    angel += 90
                 } label: {
                     Text("Random Explore")
                         .font(.title2)

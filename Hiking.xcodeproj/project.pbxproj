@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE9CAB102A5F2405001E3F5B /* CustomGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CAB0F2A5F2405001E3F5B /* CustomGradient.swift */; };
+		F897D4382A66AA4A00C499D8 /* MotionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F897D4372A66AA4A00C499D8 /* MotionAnimation.swift */; };
 		F8C6E0362A5D772F00D9480D /* HikingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C6E0352A5D772F00D9480D /* HikingApp.swift */; };
 		F8C6E0382A5D772F00D9480D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C6E0372A5D772F00D9480D /* ContentView.swift */; };
 		F8C6E03A2A5D773200D9480D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C6E0392A5D773200D9480D /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		CE9CAB0F2A5F2405001E3F5B /* CustomGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGradient.swift; sourceTree = "<group>"; };
+		F897D4372A66AA4A00C499D8 /* MotionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimation.swift; sourceTree = "<group>"; };
 		F8C6E0322A5D772F00D9480D /* Hiking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hiking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C6E0352A5D772F00D9480D /* HikingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingApp.swift; sourceTree = "<group>"; };
 		F8C6E0372A5D772F00D9480D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				F8C6E04A2A5D855A00D9480D /* CustomBackgroundView.swift */,
 				F8C6E04C2A5D86BE00D9480D /* CustomCircleView.swift */,
 				F8C6E04E2A5D8F0000D9480D /* CustomButtonView.swift */,
+				F897D4372A66AA4A00C499D8 /* MotionAnimation.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				CE9CAB102A5F2405001E3F5B /* CustomGradient.swift in Sources */,
 				F8C6E04F2A5D8F0000D9480D /* CustomButtonView.swift in Sources */,
 				F8C6E04B2A5D855A00D9480D /* CustomBackgroundView.swift in Sources */,
+				F897D4382A66AA4A00C499D8 /* MotionAnimation.swift in Sources */,
 				F8C6E0382A5D772F00D9480D /* ContentView.swift in Sources */,
 				F8C6E0462A5D79BC00D9480D /* CardView.swift in Sources */,
 				F8C6E0362A5D772F00D9480D /* HikingApp.swift in Sources */,
