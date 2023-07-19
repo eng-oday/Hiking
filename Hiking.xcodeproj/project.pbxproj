@@ -18,6 +18,7 @@
 		F8C6E04B2A5D855A00D9480D /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C6E04A2A5D855A00D9480D /* CustomBackgroundView.swift */; };
 		F8C6E04D2A5D86BE00D9480D /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C6E04C2A5D86BE00D9480D /* CustomCircleView.swift */; };
 		F8C6E04F2A5D8F0000D9480D /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C6E04E2A5D8F0000D9480D /* CustomButtonView.swift */; };
+		F8E654552A67F72D00496580 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E654542A67F72D00496580 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		F8C6E04A2A5D855A00D9480D /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
 		F8C6E04C2A5D86BE00D9480D /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
 		F8C6E04E2A5D8F0000D9480D /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		F8E654542A67F72D00496580 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F8C6E0372A5D772F00D9480D /* ContentView.swift */,
+				F8E654542A67F72D00496580 /* SettingView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9CAB102A5F2405001E3F5B /* CustomGradient.swift in Sources */,
+				F8E654552A67F72D00496580 /* SettingView.swift in Sources */,
 				F8C6E04F2A5D8F0000D9480D /* CustomButtonView.swift in Sources */,
 				F8C6E04B2A5D855A00D9480D /* CustomBackgroundView.swift in Sources */,
 				F897D4382A66AA4A00C499D8 /* MotionAnimation.swift in Sources */,
