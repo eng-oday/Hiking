@@ -4,6 +4,7 @@
  
 - 🥳 SwiftUI Containers
 - 🎗️ Alternates AppIcons
+- 🎉 Motion Animation
 - 🧩 Complex Card Layout
 - 💫 Gradient Animation
 - 🚮 Reusable Components
