@@ -60,6 +60,38 @@ struct SettingView: View {
             // MARK:  SECTION : ABOUT
             
             
+            Section(
+                header:
+                Text("About the app")
+                //: HEADER OF SECTION
+                        , footer:
+                    HStack{
+                        Spacer()
+                        Text("copyright © All right reserved")
+                        Spacer()
+                    }
+                    .padding(.vertical,8)
+                //: FOOTER OF SECTION
+                    
+            ) {
+                
+                CustomListRowView(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "Hike", rowColor: .blue)
+                
+                CustomListRowView(rowLabel: "Compatability", rowIcon: "info.circle", rowContent: "IOS,iPadOS", rowColor: .red)
+                
+                CustomListRowView(rowLabel: "Technology", rowIcon: "swift", rowContent: "Swift", rowColor: .orange)
+                
+                CustomListRowView(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0", rowColor: .purple)
+                
+                CustomListRowView(rowLabel: "Developer", rowIcon: "ellipsis.curlybraces", rowContent: "Oday.Mo", rowColor: .mint)
+                
+                CustomListRowView(rowLabel: "Designer", rowIcon: "paintpalette", rowContent: "Oday", rowColor: .pink)
+                
+                CustomListRowView(rowLabel: "Website", rowIcon: "globe", rowColor: .indigo,rowLinkLabel: "LinkedIn",rowLinkDestination: "https://www.linkedin.com/in/oday-mohammed-69843617a/")
+                
+                
+                
+            }//: SECTION
         }
     }
 }
