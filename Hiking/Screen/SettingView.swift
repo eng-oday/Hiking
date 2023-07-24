@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SettingView: View {
+    
+    @State var alternateAppIcons:[String] = ["AppIcon-Backpack","AppIcon-Camera","AppIcon-Campfire","AppIcon-MagnifyingGlass","AppIcon-Map","AppIcon-Mushroom"]
+    
     var body: some View {
         List {
             
@@ -57,8 +60,44 @@ struct SettingView: View {
 
             // MARK:  SECTION : ICONS
             
-            // MARK:  SECTION : ABOUT
+            Section(header:
+            Text("Alternate App Icon")
             
+            ) {
+                ScrollView(.horizontal,showsIndicators: false) {
+                    HStack {
+                        ForEach(alternateAppIcons.indices, id: \.self) { item  in
+                            Button {
+                                
+                                print("\(alternateAppIcons[item])")
+                                UIApplication.shared.setAlternateIconName(alternateAppIcons[item]) { error in
+                                    if error != nil {
+                                        print("error")
+                                    }else {
+                                        print("success")
+                                    }
+                                }
+                            } label: {
+                                Image("\(alternateAppIcons[item])-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80,height: 80)
+                                    .cornerRadius(16)
+                            }
+                            .buttonStyle(.borderless)
+                        }
+                    }
+                } //: SCROLL VIEW
+                .padding(.top,12)
+                    Text("Choose Your Favourite app icon from the collection above .")
+                        .frame(minWidth: 0,maxWidth: .infinity)
+                        .foregroundColor(.secondary)
+                        .multilineTextAlignment(.center)
+                        .font(.footnote)
+                }
+            .listRowSeparator(.hidden)
+            
+            // MARK:  SECTION : ABOUT
             
             Section(
                 header:
