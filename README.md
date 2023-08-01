@@ -1,6 +1,5 @@
 # Hiking
 
-# PinchApp
   <img src="https://github.com/eng-oday/PinchApp/assets/30195311/106e658f-8374-43e3-8243-464d50c0cf27" style="margin-right: 20px;" width="300" height="700">
   
 <img src="https://github.com/eng-oday/PinchApp/assets/30195311/3d80cf9c-ceac-42b1-a22c-986d00c4f288" style="margin-right: 20px;" width="300" height="700">
